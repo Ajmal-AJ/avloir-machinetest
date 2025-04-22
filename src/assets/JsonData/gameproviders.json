@@ -1,0 +1,102 @@
+{
+  "gameProviders":[
+
+    {
+      "imageUrl": "https://www.reddybook.club/assets/images/mac88_cp580-299.webp",
+      "isHome": false
+    },
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/mac88.webp",
+      "isHome": true
+    },
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/mac88virtualgame.webp",
+      "isHome": true
+    },
+
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-highlight/fungames_500-299.webp",
+      "isHome": false
+    },
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/evolution.webp",
+      "isHome": true
+    },
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/ezugi.webp",
+      "isHome": true
+    },
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/vivogaming.webp",
+      "isHome": false
+    },
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/turbogames.webp",
+      "isHome": false
+    },
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/spribe.webp",
+      "isHome": true
+    },
+
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/gamzix.webp",
+      "isHome": true
+    },
+
+
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/jili.webp",
+      "isHome": true
+    },
+
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/aesexy.webp",
+      "isHome": true
+    },
+
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/evoplay.webp",
+      "isHome": false
+    },
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/bombaylive.webp",
+      "isHome": true
+    },
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/kingmaker.webp",
+      "isHome": false
+    },
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/smartsoft.webp",
+      "isHome": false
+    },
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/playtech.webp",
+      "isHome": false
+    },
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/betgames.webp",
+      "isHome": true
+    },
+
+    {
+      "imageUrl": "https://tezcdn.io/casino/casino-provider-500*299/vsport.webp",
+      "isHome": false
+    }
+  ]
+}

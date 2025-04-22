@@ -1,0 +1,30 @@
+{
+  "exchangeData": [
+    {
+      "title": "Cricket",
+      "image": "assets/images/home_exchange_games/4.webp"
+    },
+
+    {
+      "title": "Football",
+      "image": "assets/images/home_exchange_games/1.webp"
+    },
+    {
+      "title": "Tennis",
+      "image": "assets/images/home_exchange_games/2.webp"
+    },
+    {
+      "title": "Int Casino",
+      "image": "assets/images/home_exchange_games/99998.webp"
+    },
+    {
+      "title": "Horse Racing",
+      "image": "assets/images/home_exchange_games/7.webp"
+    },
+    {
+      "title": "Greyhound Racing",
+      "image": "assets/images/home_exchange_games/4339.webp"
+    }
+  ]
+}
+

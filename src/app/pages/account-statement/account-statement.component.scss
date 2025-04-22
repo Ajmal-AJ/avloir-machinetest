@@ -1,0 +1,55 @@
+section.section.listing_page {
+  overflow-x: hidden;
+  padding: 0px;
+  background-color: #fff !important;
+}
+.userscreen-title {
+  margin-bottom: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  background: var(--theme-primary-color);
+  padding: 10px;
+  color: #fff;
+}
+.form_search {
+  padding: 5px;
+  background: #ddd;
+}
+.btn-fs {
+  background: var(--theme-secondary-color);
+  height: 38px;
+  font-size: 11px;
+  text-transform: uppercase;
+  background: #000;
+  width: 100%;
+  color: #fff;
+  /* padding: 0; */
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+}
+.accounts .table td, .accounts .table th {
+  padding: 5px;
+  font-size: 12px;
+  vertical-align: middle;
+}
+.accounts .table th, .accounts .table thead th {
+  font-weight: 600;
+  padding: 8px;
+  font-size: 12px;
+}
+.accounts .table thead th {
+  background: #dfdde0;
+  text-transform: capitalize;
+  border-bottom: none !important;
+}
+
+@media screen and (max-width:992px) {
+  section.section.listing_page {
+    overflow-x: hidden;
+    padding: 0px;
+    background-color: #fff !important;
+    margin-top: 95px;
+}
+}

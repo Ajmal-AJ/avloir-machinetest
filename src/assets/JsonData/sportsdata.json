@@ -1,0 +1,1121 @@
+{
+  "cricket": [
+    {
+      "match_date": "Mar 22 2025 20:30 (IST)",
+      "league": "Indian Premier League",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+     "icons": {
+        "f": true,
+        "p" :false,
+        "bm": true,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 13:30 (IST)",
+      "league": "Chava 11 v Tfc",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :true,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "8.75",
+          "lay": "-"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "1.05",
+          "lay": "-"
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 15:30 (IST)",
+      "league": "Hobart Hurricanes SRL V Melbourne Stars SRL",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        }
+      ]
+    },
+
+    {
+      "match_date": "Mar 25 2025 16:05 (IST)",
+      "league": "SRI LANKA T10 VS AFGHANISTAN T10",
+      "status": "Live",
+      "view":true,
+      "virtual" :true,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": true,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        }
+      ]
+    },
+    {
+      "match_date": "Mar 25 2025 16:30 (IST)",
+      "league": "Lisbon Super Giants v Team Tigers Portugal",
+      "status": "Live",
+      "view":false,
+      "virtual" :true,
+      "icons": {
+        "f": false,
+        "p" :true,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "1.22",
+          "lay": "-"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "4.05",
+          "lay": "-"
+        }
+      ]
+    },
+    {
+      "match_date": "Mar 25 2025 19:30 (IST)",
+      "league": "Gujarat Titans v Punjab Kings",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": true,
+        "p" :false,
+        "bm": true,
+        "t":true,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "1.79",
+          "lay": "1.08"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "2.24",
+          "lay": "2.26"
+        }
+      ]
+    },
+    {
+      "match_date": "Mar 26 2025 07:15 (IST)",
+      "league": "New Zealand Women v Australia Women",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": true,
+        "p" :false,
+        "bm": true,
+        "t":true,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "6",
+          "lay": "6.4"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "1.19",
+          "lay": "1.2"
+        }
+      ]
+    },
+    {
+      "match_date": "Mar 26 2025 11:45 (IST)",
+      "league": "New Zealand v Pakistan",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": true,
+        "p" :false,
+        "bm": true,
+        "t":true,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "1.51",
+          "lay": "2.28"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "2.94",
+          "lay": "2.98"
+        }
+      ]
+    },
+    {
+      "match_date": "Mar 26 2025 19:30 (IST)",
+      "league": "Rajasthan Royals v Kolkata Knight Riders",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": true,
+        "p" :false,
+        "bm": true,
+        "t":true,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "2.26",
+          "lay": "2.28"
+        },
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "1.78",
+          "lay": "1.79"
+        }
+      ]
+    }
+
+  ],
+
+  "football": [
+    {
+      "match_date": "Sep 06 2019 04:30 (IST)",
+      "league": "UEFA Nations League",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": true,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        }
+      ]
+    },
+    {
+      "match_date": "Jan 01 2025 22:15 (IST)",
+      "league": "UEFA Champions League",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": true,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 15:10 (IST)",
+      "league": "South Korea v Jordan",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":true
+      },
+      "betting": [
+        {
+          "back": "1.18",
+          "lay": "1.19"
+        },
+        {
+          "back": "7.8",
+          "lay": "8.2"
+        },
+        {
+          "back": "28",
+          "lay": "42"
+        }
+      ]
+    },
+
+    {
+      "match_date": "Mar 25 2025 15:10 (IST)",
+      "league": "Japan v Saudi Arabia",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":true
+      },
+      "betting": [
+        {
+          "back": "1.7",
+          "lay": "1.71"
+        },
+        {
+          "back": "3.35",
+          "lay": "3.4"
+        },
+        {
+          "back": "8.6",
+          "lay": "8.8"
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 15:15 (IST)",
+      "league": "China v Australia",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":true
+      },
+      "betting": [
+        {
+          "back": "6.4",
+          "lay": "6.6"
+        },
+        {
+          "back": "4.1",
+          "lay": "4.2"
+        },
+        {
+          "back": "1.65",
+          "lay": "1.67"
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 15:15 (IST)",
+      "league": "Tajikistan v Timor-Leste",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":true
+      },
+      "betting": [
+        {
+          "back": "0",
+          "lay": "1.01"
+        },
+        {
+          "back": "110",
+          "lay": "340"
+        },
+        {
+          "back": "210",
+          "lay": "0"
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 15:15 (IST)",
+      "league": "Myanmar v Afghanistan",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":true
+      },
+      "betting": [
+        {
+          "back": "2.78",
+          "lay": "2.88"
+        },
+        {
+          "back": "2.46",
+          "lay": "2.45"
+        },
+        {
+          "back": "4",
+          "lay": "4.2"
+        }
+      ]
+    },
+
+    {
+      "match_date": "Mar 25 2025 15:15 (IST)",
+      "league": "Chinese Taipei v Turkmenistan",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":true
+      },
+      "betting": [
+        {
+          "back": "3.35",
+          "lay": "3.5"
+        },
+        {
+          "back": "2.74",
+          "lay": "2.84"
+        },
+        {
+          "back": "2.8",
+          "lay": "2.96"
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 15:15 (IST)",
+      "league": "Myanmar vs. Afghanistan",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :true,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "2.4",
+          "lay": ""
+        },
+        {
+          "back": "3",
+          "lay": ""
+        },
+        {
+          "back": "2.95",
+          "lay": ""
+        }
+      ]
+    },
+
+    {
+      "match_date": "Mar 25 2025 15:15 (IST)",
+      "league": "Chinese Taipei vs. Turkmenistan",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :true,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "3.14",
+          "lay": ""
+        },
+        {
+          "back": "2.77",
+          "lay": ""
+        },
+        {
+          "back": "2.56",
+          "lay": ""
+        }
+      ]
+    }
+
+  ],
+  "tennis": [
+    {
+      "match_date": "Mar 14 2025 05:30 (IST)",
+      "league": "ATP Miami 2025",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": true,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        }
+      ]
+    },
+    {
+      "match_date": "Mar 17 2025 05:30 (IST)",
+      "league": "WTA Miami 2025",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": true,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "-",
+          "lay": "-"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 12:25 (IST)",
+      "league": "D Galfi v Els Jacquemot",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "1.25",
+          "lay": "1.27"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "4.7",
+          "lay": "4.9"
+        }
+      ]
+    },
+
+    {
+      "match_date": "Mar 25 2025 12:25 (IST)",
+      "league": "No Noha Akugue v Oks Selekhmeteva",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "4.7",
+          "lay": "4.9"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "1.26",
+          "lay": "1.27"
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 12:25 (IST)",
+      "league": "Cachin v Mi Damas",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "1.18",
+          "lay": "1.24"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "5.2",
+          "lay": "6.6"
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 12:25 (IST)",
+      "league": "Tr Boyer v F Arnaboldi",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "6.4",
+          "lay": "6.6"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "1.18",
+          "lay": "1.19"
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 12:25 (IST)",
+      "league": "Passaro v E Ymer",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "2.12",
+          "lay": "2.14"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "1.87",
+          "lay": "1.88"
+        }
+      ]
+    },
+
+    {
+      "match_date": "Mar 25 2025 12:25 (IST)",
+      "league": "Gi Fonio v Svrcina",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "2.26",
+          "lay": "2.3"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "1.77",
+          "lay": "1.8"
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 12:25 (IST)",
+      "league": "Barranco Cosano v Il Radulov",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "1.18",
+          "lay": "1.2"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "6",
+          "lay": "6.6"
+        }
+      ]
+    },
+
+    {
+      "match_date": "Mar 25 2025 15:15 (IST)",
+      "league": "Gakhov v N Hardt",
+      "status": "Live",
+      "view":true,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "5.8",
+          "lay": "6.6"
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "1.18",
+          "lay": "1.21"
+        }
+      ]
+    },
+
+    {
+      "match_date": "Mar 25 2025 13:30 (IST)",
+      "league": "Arsic, Anastasija vs. Jerolimov, Chiara",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :true,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "2.5",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "1.42",
+          "lay": ""
+        }
+      ]
+    },
+
+    {
+      "match_date": "Mar 25 2025 14:24 (IST)",
+      "league": "Tsogna vs. Kyrgiso",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 14:30 (IST)",
+      "league": "Auger Aliassime, Felix (SRL) vs. Tabilo, Alejandro (Srl)",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :true,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 14:30 (IST)",
+      "league": "Boyer, Tristan vs. Arnaboldi, Federico",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :true,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "5.74",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "1.1",
+          "lay": ""
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 14:30 (IST)",
+      "league": "Fonio, Giovanni vs. Svrcina, Dalibor",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :true,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "1.8",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "1.91",
+          "lay": ""
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 14:30 (IST)",
+      "league": "Passaro, Francesco vs. Ymer, Elias",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :true,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "1.76",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "1.95",
+          "lay": ""
+        }
+      ]
+    },
+
+
+    {
+      "match_date": "Mar 25 2025 14:40 (IST)",
+      "league": "Nincevic, Frane vs. Vales, Vojtech",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :true,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "1.62",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "2.05",
+          "lay": ""
+        }
+      ]
+    },
+
+    {
+      "match_date": "Mar 25 2025 15:15 (IST)",
+      "league": "Noha Akugue, Noma vs. Selekhmeteva, Oksana",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :true,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "4.13",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "1.21",
+          "lay": ""
+        }
+      ]
+    },
+
+    {
+      "match_date": "Mar 25 2025 14:40 (IST)",
+      "league": "Thompson, Jordan (Srl) vs. Seyboth Wild, Thiago (Srl)",
+      "status": "Live",
+      "view":false,
+      "virtual" :false,
+      "icons": {
+        "f": false,
+        "p" :false,
+        "bm": false,
+        "t":false,
+        "g":false
+      },
+      "betting": [
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        },
+        {
+          "back": "",
+          "lay": ""
+        }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,410 @@
+.list-sport-title {
+  position: relative;
+  padding: 7px 15px;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.game-icon-img {
+  max-width: 20px;
+  vertical-align: sub;
+}
+
+.collapseIcon,
+.collapseIcon:hover {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: #fff;
+}
+
+.collapseIcon i {
+  font-style: normal;
+}
+
+.collapseIcon[aria-expanded="true"] i:before,
+.bet-table-header[aria-expanded="true"]:before {
+  content: "\f63b";
+  font-family: bootstrap-icons !important;
+}
+
+.collapseIcon[aria-expanded="false"] i:before, .bet-table-header[aria-expanded="false"]:before {
+  content: "\f4fe";
+  font-family: bootstrap-icons !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  overflow-x: overlay;
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  background: none;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px var(--theme-primary-color);
+}
+
+ul li {
+  list-style: none;
+  display: inline-flex;
+  position: relative;
+  padding: 0;
+}
+
+ul.live_virtual {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: auto;
+}
+
+ul.live_virtual li {
+  display: inline;
+}
+
+ul.live_virtual li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+ul.live_virtual li input[type="checkbox"] {
+  display: absolute;
+}
+
+
+ul.live_virtual li label {
+  padding: 3px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.live_virtual li label {
+  display: inline-block;
+  border: 1px solid var(--bs-light);
+  color: var(--bs-light);
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 1px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+ul.live_virtual li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'bootstrap-icons';
+  font-weight: 400;
+  font-size: 12px;
+  padding-right: 2px;
+  content: "\f4fe";
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+ul li:after {
+  content: '';
+  height: 120%;
+  width: 1px;
+  background: var(--theme-primary-color);
+  position: absolute;
+  top: -2px;
+  bottom: 0;
+  right: 0;
+}
+
+
+.bet-table-row {
+  background: #ffffff;
+  color: #1e1e1e;
+  border-bottom: 1px solid #f8f8f8;
+  transition: 0.9s;
+}
+
+.bet-table-header {
+  background: var(--theme-primary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+
+.game-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.game-left-col {
+  display: flex;
+  align-items: center;
+  flex-basis: 80%;
+  position: relative;
+}
+
+.game-name {
+  margin-left: 10px;
+  line-height: normal;
+  padding-top: 10px;
+}
+
+.team-name {
+  margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 280px;
+  width: 280px;
+  color: #3B5160;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.team-name.team-event {
+  font-size: 9px;
+  color: #838383;
+  font-weight: 500;
+}
+
+.game-icons {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  color: #7f7f7f;
+}
+
+.icons_market {
+  display: flex;
+}
+
+.icons_market span {
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0 1px;
+  color: #fff;
+  border-radius: 2px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.icon_fancy,
+.icon_bookmaker,
+.icon_custom {
+  animation: fancyBMIcon 2s infinite;
+}
+
+.icon_custom,
+.icon_fancy,
+.icon_bookmaker {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+}
+
+.game-date.inplay {
+  text-align: center;
+  position: relative;
+  background: none;
+  border: none;
+  margin-left: 4px;
+}
+
+.game-date.inplay span {
+  color: #00931a;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.game-date.inplay span:after {
+  content: "";
+  background-color: #00931a;
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  bottom: -1px;
+  animation: linear infinite alternate;
+  animation-name: run;
+  animation-duration: 1.2s;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 1.2s;
+}
+
+.h-backLay {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bl-box {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  font-size: 13px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 45px;
+  border-left: 1px solid #f8f8f8;
+}
+
+.back {
+  background: #9bd4ff;
+}
+
+.bet-button-price {
+  line-height: 1.1;
+}
+
+.lay {
+  background: #ffb8c8;
+}
+ul.live_virtual li label {
+  display: inline-block;
+  border: 1px solid var(--bs-light);
+  color: var(--bs-light);
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 1px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+ ul li:after {
+  content: '';
+  height: 120%;
+  width: 1px;
+  background: var(--theme-primary-color);
+  position: absolute;
+  top: -2px;
+  bottom: 0;
+  right: 0;
+}
+
+ul.live_virtual li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'bootstrap-icons';
+  font-weight: 400;
+  font-size: 12px;
+  padding-right: 2px;
+  content: "\f4fe";
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+ul.live_virtual li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'bootstrap-icons';
+  font-weight: 400;
+  font-size: 12px;
+  padding-right: 2px;
+  content: "\f4fe";
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+ul.live_virtual li input[type="checkbox"]:checked+label::before {
+  content: "\f633";
+  -webkit-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+ul.live_virtual li input[type="checkbox"]:checked+label {
+  border: 1px solid #00ad6f;
+  background-color: #00ad6f;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@keyframes fancyBMIcon {
+  1% {
+    background-color: #18325c;
+  }
+
+  50% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: darkorange;
+  }
+}
+@keyframes run {
+  0% {
+    left: 0;
+    width: 5%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    right: 0;
+    width: 5%;
+  }
+  }
+  .icon_game img {
+    width: 20px;
+}
+.ntext{
+  font-size: 12px;
+}

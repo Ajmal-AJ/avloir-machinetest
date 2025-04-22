@@ -1,0 +1,55 @@
+
+<!-- <app-header></app-header> -->
+
+<header class="fixed-top">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand"><img src="assets/images/11xplay/logo.png" alt=""></a>
+
+     <ul class="d-flex align-items-center btn-wrap mb-0 gap-3">
+      <li class="nav-item"> <a  class="btn  nav-link demobtn"> <i class="bi bi-box-arrow-in-right me-1"></i><span class="text-uppercase">Demo</span> </a></li>
+      <li class="nav-item"> <a  class="btn  nav-link signbtn" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="bi bi-box-arrow-in-right me-1"></i> <span class="text-uppercase">Login</span> </a></li>
+    </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="marque-wrapper">
+  <img src="assets/images/commentary.png" alt="">
+  <marquee behavior="" direction="">New Version Available With International Casino Please Contact Your Upline</marquee>
+</div>
+
+
+
+<main id="main" class="main" >
+  <!-- <app-sidemenu *ngIf="(loggedIn$ | async)"></app-sidemenu> -->
+  <router-outlet />
+</main>
+
+<app-footer ></app-footer>
+
+
+<div class="modal fade login-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <button #modalCloseBtn type="button" class="d-none" data-bs-dismiss="modal"></button>
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+      <div class="modal-body">
+
+      <app-login (loginSuccess)="modalCloseBtn.click()"></app-login>
+
+
+      <div class="copy-text">
+          Powered by <a href="javascript:void(0)">11xplay</a>
+          <p><a href="mailto:11xplayofficiall@gmail.com">11xplayofficiall&#64;gmail.com</a></p>
+
+      </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>

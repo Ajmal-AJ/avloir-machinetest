@@ -1,0 +1,63 @@
+<div id="sidebar" class="sidebar" [ngStyle]="{
+  'left': layoutService.isMobile
+    ? (layoutService.isSidemenuOpen ? '0px' : '-250px')
+    : '0px'
+}">
+  <ul id="sidebar-nav" class="sidebar-nav">
+      <img class="mobile-logo" src="assets/images/11xplayy/logo.png" />
+      <li class="nav-item d-none d-sm-block">
+          <a class="nav-link final-link">
+              <img src="https://speedcdn.io/assets/score_card/ipl-icon.png" /><span class="blinker">IPL 2025</span>
+          </a>
+      </li>
+      <!----><!---->
+      <li class="nav-item">
+          <a  routerLink="/dashboard" routerLinkActive="/dashboard" class="nav-link final-link nmm-active" (click)="layoutService.toggleSidemenu()">
+              <img src="assets/images/menu-home.png" /><span>home</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a  routerLink="/dashboard" routerLinkActive="nmm-active" class="nav-link multi-market final-link" (click)="layoutService.toggleSidemenu()">
+              <img src="assets/images/menu-market.png" /><span>Multi Market</span>
+          </a>
+      </li>
+      <!---->
+      <li class="nav-item">
+          <a  routerLink="/dashboard" routerLinkActive="nmm-active" class="nav-link final-link" (click)="layoutService.toggleSidemenu()">
+              <img src="assets/images/profitloss.svg" class="img-fluid" /><span>profit &amp; loss</span>
+          </a>
+      </li>
+      <!---->
+      <li class="nav-item">
+          <a  routerLink="/dashboard/account-statement"  routerLinkActive="nmm-active" class="nav-link final-link" (click)="layoutService.toggleSidemenu()">
+              <img src="assets/images/statement.svg" class="img-fluid" /><span>Account statement</span>
+          </a>
+      </li>
+      <!---->
+      <li class="nav-item">
+          <a   routerLink="/dashboard" routerLinkActive="nmm-active" class="nav-link " (click)="layoutService.toggleSidemenu()">
+              <img src="assets/images/bets.svg" class="img-fluid" /><span>unsettled bets</span>
+          </a>
+      </li>
+      <!---->
+      <li class="nav-item">
+          <a  routerLink="/dashboard" class="nav-link final-link" (click)="layoutService.toggleSidemenu()"><img src="assets/images/terms.svg" class="img-fluid" /><span>rules</span></a>
+      </li>
+      <li class="nav-item">
+          <a   routerLink="/dashboard" routerLinkActive="nmm-active" (click)="layoutService.toggleSidemenu()" class="nav-link final-link">
+              <img src="assets/images/edit.svg" class="img-fluid" /><span>edit stake</span>
+          </a>
+      </li>
+      <!---->
+      <li class="nav-item">
+          <a  routerLink="/dashboard/profile"  routerLinkActive="nmm-active" (click)="layoutService.toggleSidemenu()" class="nav-link final-link">
+              <img src="assets/images/profile_image.png" class="img-fluid" /><span>Profile (demo123)</span>
+          </a>
+      </li>
+      <!---->
+      <li class="nav-item nav-highlight">
+          <a href="javascript:void(0);" class="nav-link final-link" (click)="authService.logout()"><img src="assets/images/logout.svg" class="img-fluid" /><span>Logout</span></a>
+      </li>
+      <!---->
+  </ul>
+</div>

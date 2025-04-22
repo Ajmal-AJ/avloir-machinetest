@@ -1,0 +1,87 @@
+<section class="section listing_page accounts">
+  <div class="row">
+    <div class="col-xl-12">
+      <h2 class="userscreen-title">account statement</h2>
+      <div class="form_search">
+        <form class="" [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-md-2 col-6">
+              <select class="form-select" formControlName="sports">
+                <option value="ALL">All Sports </option>
+                <option [value]="item.id" *ngFor="let item of sportsCatgories; let i=index">{{item.title}} </option>
+
+              </select>
+            </div>
+
+            <div class="col-md-2 col-6">
+              <input type="date" class="form-control" formControlName="startDate" />
+            </div>
+
+            <div class="col-md-2 col-6">
+              <input type="date"  class="form-control "  formControlName="endDate" />
+            </div>
+
+            <div class="col-md-2 col-6">
+              <button type="submit" class="btn btn-fs">get statement</button>
+            </div>
+
+            <div class="col-md-4 col-12 text-md-end text-center">
+              <div class="document_button"></div>
+            </div>
+
+
+          </div>
+        </form>
+
+
+      </div>
+
+
+
+      <div class="table-responsive">
+        <table class="datatable table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>date</th>
+              <th>Total</th>
+              <th>balance</th>
+              <th>D/C</th>
+              <th>Description</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr  *ngFor="let item of statements; let i=index">
+              <td>{{item.no}}</td>
+              <td>{{item.date}}</td>
+              <td>{{item.Total}}</td>
+              <td>{{item.balance}}</td>
+              <td>{{item.DC}}</td>
+              <td>{{item.Description}}</td>
+              <td>{{item.Details}}</td>
+
+            </tr>
+
+
+            <tr *ngIf="statements.length == 0">
+              <td colspan="10" class="noData">No Data Found</td>
+            </tr>
+          </tbody>
+
+        </table>
+        <div class="pagination">
+          <nav aria-label="pagination example" class="Pager1">
+            <ul class="pagination pagination-circle justify-content-center">
+              <li class="page-item disabled"><a href="javascript:void(0)" class="page-link">Previous Page</a></li>
+              <li class="page-item disabled"><a href="javascript:void(0)" class="page-link">Next Page</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>

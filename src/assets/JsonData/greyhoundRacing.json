@@ -1,0 +1,19 @@
+{
+  "nextGreyhoundRacing": [
+   { "time": "04:39 PM", "country": "https://flagcdn.com/h40/gb.png", "race": "A6", "distance": "480m" },
+   { "time": "04:48 PM", "country": "https://flagcdn.com/h40/gb.png", "race": "A8", "distance": "500m" },
+   { "time": "04:50 PM", "country": "https://flagcdn.com/h40/au.png", "race": "R5", "distance": "488m", "grade": "Nvce" },
+   { "time": "04:51 PM", "country": "https://flagcdn.com/h40/gb.png", "race": "D4", "distance": "270m" },
+   { "time": "04:54 PM", "country": "https://flagcdn.com/h40/au.png", "race": "R10", "distance": "388m", "grade": "Gr5" },
+   { "time": "04:57 PM", "country": "https://flagcdn.com/h40/gb.png", "race": "A8", "distance": "480m" },
+   { "time": "05:00 PM", "country": "https://flagcdn.com/h40/au.png", "race": "R11", "distance": "400m", "grade": "Gr5" },
+   { "time": "05:04 PM", "country": "https://flagcdn.com/h40/gb.png", "race": "A5", "distance": "500m" },
+   { "time": "05:06 PM", "country": "https://flagcdn.com/h40/au.png", "race": "R6", "distance": "400m", "grade": "Gr5" },
+   { "time": "05:08 PM", "country": "https://flagcdn.com/h40/gb.png", "race": "D1", "distance": "270m" },
+   { "time": "05:13 PM", "country": "https://flagcdn.com/h40/gb.png", "race": "A2", "distance": "480m" },
+   { "time": "05:14 PM", "country": "https://flagcdn.com/h40/au.png", "race": "R11", "distance": "388m", "grade": "Gr5" },
+   { "time": "05:17 PM", "country": "https://flagcdn.com/h40/au.png", "race": "R12", "distance": "400m", "grade": "Gr5" },
+   { "time": "05:22 PM", "country": "https://flagcdn.com/h40/gb.png", "race": "A6", "distance": "500m" }
+ ]
+
+ }

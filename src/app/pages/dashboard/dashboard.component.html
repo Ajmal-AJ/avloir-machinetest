@@ -1,0 +1,743 @@
+<section class="section listing_page">
+
+
+  <div class="tab-container">
+
+
+    <ul role="tablist" class="nav nav-pills" aria-label="Tabs">
+
+      <li class="active nav-item">
+        <a class="nav-link active" id="inplay-tab" (click)="showCategoryData('inplay')" data-bs-toggle="tab"
+          data-bs-target="#inplay-tab-pane" type="button" role="tab" aria-controls="inplay-tab-pane"
+          aria-selected="true">
+          <span></span><img class="img-fluid" src="assets/images/menu-in_play.png" /><span class="ml-2"> Inplay </span>
+
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" id="featured-tab" (click)="showCategoryData('featured')" data-bs-toggle="tab"
+          data-bs-target="#featured-tab-pane" type="button" role="tab" aria-controls="featured-tab-pane"
+          aria-selected="false">
+          <span></span><img class="img-fluid" src="assets/images/menu-featured.png" /><span class="ml-2"> Featured
+          </span>
+
+        </a>
+      </li>
+
+
+      <li class="nav-item" *ngFor="let item of sportsCatgories; let i=index">
+        <a class="nav-link" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" (click)="showCategoryData(item.id)">
+
+
+          <span></span><img class="img-fluid" src="{{item.icon}}" /><span class="ml-2"> {{item.title}} </span>
+
+        </a>
+      </li>
+
+
+
+
+
+
+    </ul>
+
+
+
+    <div class="tab-content">
+      <!-- -- -->
+      <div class="tab-pane fade show active">
+
+        <div class="extra" [ngClass]="{ 'd-none': !isVisible }" >
+
+          <div class="row mx-0 mb-1 d-none d-md-flex">
+            <div class="col-md-4 px-0"><a href="javascript:void(0);" class="button_dakred">Our casino</a></div>
+            <div class="col-md-4 px-1"><a href="javascript:void(0);" class="button_darkyellow">Int casino</a></div>
+            <div class="col-md-4 px-0"><a href="javascript:void(0);" class="button_orange">Sports Book</a></div>
+          </div>
+
+
+
+
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body card-content p-0">
+                  <div data-bs-toggle="collapse" href="#HorseRacing" aria-expanded="true" aria-controls="HorseRacing"
+                    class="bet-table-header">
+                    <span class="list-sport-title"><img src="assets/images/menu-horse.png"
+                        class="img-fluid game-icon-img" /> Next Horse Racing</span>
+                  </div>
+                  <div id="HorseRacing" class="bet-table-body collapse show">
+                    <div class="race-section">
+
+
+                      <a  routerLink="/dashboard" class="chip" *ngFor="let item of horseRacingData; let i=index">
+                        <img alt="Horse" src="{{item.country}}" />
+                        <div class="race_detail">
+                          <span class="race_time" style="font-weight: 700;"> {{item.time}}</span><span class="race-name">{{item.race}}
+                            {{item.distance}} {{item.grade}}</span>
+                        </div>
+                      </a>
+
+
+
+
+
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body card-content p-0">
+                  <div data-bs-toggle="collapse" href="#GreyRacing" aria-expanded="true" aria-controls="GreyRacing"
+                    class="bet-table-header">
+                    <span class="list-sport-title"><img src="assets/images/menu-greyhound.png"
+                        class="img-fluid game-icon-img" /> Next Greyhound Racing</span>
+                  </div>
+                  <div id="GreyRacing" class="bet-table-body collapse show">
+                    <div class="race-section">
+                      <a  class="chip" *ngFor="let item of GreyhoundRacing; let i=index">
+                        <img alt="Greyhound" src="{{item.country}}"/>
+                        <div class="race_detail">
+                          <span class="race_time" style="font-weight: 700;"> {{item.time}} </span><span class="race-name">{{item.race}}
+                            {{item.distance}} {{item.grade}}</span>
+                        </div>
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="two">
+          <div class="row">
+            <div class="col-lg-12" *ngFor="let item of sportsCatgories;let i=index">
+              <!-- *ngIf="selectedCategoryId === item.id && sportsMatches[item.id]?.length" -->
+              <ng-container *ngIf="sportsMatches[item.id]?.length">
+                <div *ngIf="selectedCategoryId === item.id || isVisible== true">
+
+                  <app-sports-list [title]="item.title" [icon]="item.icon" [id]="item.id"
+                  [matches]="sportsMatches[item.id]">
+                </app-sports-list>
+              </div>
+              </ng-container>
+            </div>
+          </div>
+
+          <div class="extra">
+            <div class="bet-table-header">
+              <span class="list-sport-title"><img src="assets/images/icon-casino.svg" class="img-fluid game-icon-img" />
+                &nbsp;
+                casino provider </span>
+            </div>
+            <div class="csn_div">
+              <div class="csn_thumb" *ngFor="let item of gameProviders; let i=index">
+                <img src="{{item.imageUrl}}" class="img-fluid" />
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+</section>
+
+
+
+
+
+  <!-- <div class="tab-pane fade" id="featured-tab-pane" role="tabpanel" aria-labelledby="featured-tab" tabindex="0">
+
+        dasdsadsad
+      </div> -->
+
+<!-- <div class="card">
+                                <div class="card-body card-content p-0">
+                                    <div class="bet-table-header">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-6">
+                                                <span class="list-sport-title">
+                                                    <img class="img-fluid game-icon-img" src="assets/images/menu-4.png" /> &nbsp; Cricket
+                                                </span>
+                                                <a href="#sportOne-4" data-bs-toggle="collapse" aria-expanded="true" class="collapseIcon" aria-controls="sportOne-4">
+                                                    <i></i>
+                                                </a>
+                                                <ul class="live_virtual">
+                                                    <li>
+                                                        <input type="checkbox" value="Order one" id="checkboxOne4-inplay" class="ng-untouched ng-pristine ng-valid" />
+                                                        <label for="checkboxOne4-inplay">LIVE</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" value="Order Two" id="checkboxTwo4--inplay" class="ng-untouched ng-pristine ng-valid" />
+                                                        <label for="checkboxTwo4--inplay">VIRTUAL</label>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="col-md-2 text-center d-none d-md-block">1</div>
+                                            <div class="col-md-2 text-center d-none d-md-block">x</div>
+                                            <div class="col-md-2 text-center d-none d-md-block">2</div>
+                                        </div>
+                                    </div>
+                                    <div class="bet-table-body collapse show" id="sportOne-4">
+                                        <div>
+
+                                            <div class="bet-table-row">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="game-box">
+                                                            <div class="game-left-col">
+                                                                <div class="game-name">
+                                                                    <a href="">
+                                                                        <p class="team-name text-left team-event">Mar 22 2025 20:30 (IST)</p>
+                                                                        <p class="team-name text-left">Indian Premier League</p>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="game-icons">
+                                                                <div class="icons_market">
+
+                                                                    <span class="icon_fancy">F</span>
+
+                                                                    <span class="icon_bookmaker">BM</span>
+
+                                                                </div>
+                                                                <div class="game-date inplay"><span>Live</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 text-center">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bet-table-row">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="game-box">
+                                                            <div class="game-left-col">
+                                                                <div class="game-name">
+                                                                    <a href="/game-detail/59173863">
+                                                                        <p class="team-name text-left team-event">Mar 25 2025 13:30 (IST)</p>
+                                                                        <p class="team-name text-left">Chava 11 v Tfc</p>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="game-icons">
+                                                                <div class="icons_market">
+
+                                                                    <span class="icon_bookmaker bg-success">P</span>
+
+                                                                </div>
+                                                                <div class="game-date inplay"><span>Live</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 text-center">
+
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="bl-box back"><span class="d-block bet-button-price">8.75 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price">- </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="bl-box back"><span class="d-block bet-button-price">- </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price">- </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="bl-box back"><span class="d-block bet-button-price">1.05 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price">- </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bet-table-row">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="game-box">
+                                                            <div class="game-left-col">
+                                                                <div class="game-name">
+                                                                    <a href="/game-detail/58811889">
+                                                                        <p class="team-name text-left team-event">Mar 25 2025 15:30 (IST)</p>
+                                                                        <p class="team-name text-left">Hobart Hurricanes SRL V Melbourne Stars SRL</p>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="game-icons">
+                                                                <div class="icons_market"></div>
+                                                                <div class="game-date inplay"><span>Live</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 text-center">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bet-table-row">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="game-box">
+                                                            <div class="game-left-col">
+                                                                <div class="game-name">
+                                                                    <a href="/game-detail/1742765555">
+                                                                        <p class="team-name text-left team-event">Mar 25 2025 16:05 (IST)</p>
+                                                                        <p class="team-name text-left">🎮SRI LANKA T10 VS AFGHANISTAN T10</p>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="game-icons">
+                                                                <div class="icons_market">
+                                                                    <span class="icon_game"><img src="assets/images/gamepad.png" class="img-fluid" /></span>
+
+                                                                    <span class="icon_bookmaker">BM</span>
+
+                                                                    <span class="icon_game"><img src="assets/images/tv.svg" class="img-fluid" /></span>
+
+                                                                </div>
+                                                                <div class="game-date inplay"><span>Live</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 text-center">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bet-table-row">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="game-box">
+                                                            <div class="game-left-col">
+                                                                <div class="game-name">
+                                                                    <a href="/game-detail/1742771562">
+                                                                        <p class="team-name text-left team-event">Mar 25 2025 16:10 (IST)</p>
+                                                                        <p class="team-name text-left">🎮INDIA T10 VS NEW ZEALAND T10</p>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="game-icons">
+                                                                <div class="icons_market">
+                                                                    <span class="icon_game"><img src="assets/images/gamepad.png" class="img-fluid" /></span>
+
+                                                                    <span class="icon_fancy">F</span>
+
+                                                                    <span class="icon_game"><img src="assets/images/tv.svg" class="img-fluid" /></span>
+
+                                                                </div>
+                                                                <div class="game-date inplay"><span>Live</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 text-center">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bet-table-row">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="game-box">
+                                                            <div class="game-left-col">
+                                                                <div class="game-name">
+                                                                    <a href="/game-detail/59172975">
+                                                                        <p class="team-name text-left team-event">Mar 25 2025 16:30 (IST)</p>
+                                                                        <p class="team-name text-left">Lisbon Super Giants v Team Tigers Portugal</p>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="game-icons">
+                                                                <div class="icons_market">
+
+                                                                    <span class="icon_bookmaker bg-success">P</span>
+
+                                                                </div>
+                                                                <div class="game-date inplay"><span>Live</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 text-center">
+
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="bl-box back"><span class="d-block bet-button-price">1.22 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price">- </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="bl-box back"><span class="d-block bet-button-price">- </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price">- </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="bl-box back"><span class="d-block bet-button-price">4.05 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price">- </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bet-table-row">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="game-box">
+                                                            <div class="game-left-col">
+                                                                <div class="game-name">
+                                                                    <a href="/game-detail/34109310">
+                                                                        <p class="team-name text-left team-event">Mar 25 2025 19:30 (IST)</p>
+                                                                        <p class="team-name text-left">Gujarat Titans v Punjab Kings</p>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="game-icons">
+                                                                <div class="icons_market">
+
+                                                                    <span class="icon_fancy">F</span>
+
+                                                                    <span class="icon_bookmaker">BM</span>
+
+                                                                    <span class="icon_fancy">T</span>
+
+                                                                    <span class="icon_game"><img src="assets/images/tv.svg" class="img-fluid" /></span>
+
+                                                                </div>
+                                                                <div class="game-date inplay"><span>Live</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 text-center">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> 1.79 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> 1.8 </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> 2.24 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> 2.26 </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bet-table-row">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="game-box">
+                                                            <div class="game-left-col">
+                                                                <div class="game-name">
+                                                                    <a href="/game-detail/34151165">
+                                                                        <p class="team-name text-left team-event">Mar 26 2025 07:15 (IST)</p>
+                                                                        <p class="team-name text-left">New Zealand Women v Australia Women</p>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="game-icons">
+                                                                <div class="icons_market">
+
+                                                                    <span class="icon_fancy">F</span>
+
+                                                                    <span class="icon_bookmaker">BM</span>
+
+                                                                    <span class="icon_fancy">T</span>
+
+                                                                    <span class="icon_game"><img src="assets/images/tv.svg" class="img-fluid" /></span>
+
+                                                                </div>
+                                                                <div class="game-date inplay"><span>Live</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 text-center">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> 6 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> 6.4 </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> 1.19 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> 1.2 </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bet-table-row">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="game-box">
+                                                            <div class="game-left-col">
+                                                                <div class="game-name">
+                                                                    <a href="/game-detail/34151447">
+                                                                        <p class="team-name text-left team-event">Mar 26 2025 11:45 (IST)</p>
+                                                                        <p class="team-name text-left">New Zealand v Pakistan</p>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="game-icons">
+                                                                <div class="icons_market">
+
+                                                                    <span class="icon_fancy">F</span>
+
+                                                                    <span class="icon_bookmaker">BM</span>
+
+                                                                    <span class="icon_fancy">T</span>
+
+                                                                    <span class="icon_game"><img src="assets/images/tv.svg" class="img-fluid" /></span>
+
+                                                                </div>
+                                                                <div class="game-date inplay"><span>Live</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 text-center">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> 1.51 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> 1.52 </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> 2.94 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> 2.98 </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bet-table-row">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="game-box">
+                                                            <div class="game-left-col">
+                                                                <div class="game-name">
+                                                                    <a href="/game-detail/34151830">
+                                                                        <p class="team-name text-left team-event">Mar 26 2025 19:30 (IST)</p>
+                                                                        <p class="team-name text-left">Rajasthan Royals v Kolkata Knight Riders</p>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="game-icons">
+                                                                <div class="icons_market">
+
+                                                                    <span class="icon_fancy">F</span>
+
+                                                                    <span class="icon_bookmaker">BM</span>
+
+                                                                    <span class="icon_fancy">T</span>
+
+                                                                    <span class="icon_game"><img src="assets/images/tv.svg" class="img-fluid" /></span>
+
+                                                                </div>
+                                                                <div class="game-date inplay"><span>Live</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 text-center">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> 2.26 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> 2.28 </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> - </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> - </span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-4">
+                                                                <div class="h-backLay">
+                                                                    <div class="back bl-box"><span class="d-block bet-button-price"> 1.78 </span></div>
+                                                                    <div class="bl-box lay"><span class="d-block bet-button-price"> 1.79 </span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div> -->

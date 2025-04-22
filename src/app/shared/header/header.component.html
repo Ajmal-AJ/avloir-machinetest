@@ -1,0 +1,24 @@
+<header class="fixed-top">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a  class="bi bi-list-nested toggle-sidebar-btn" (click)="layoutService.toggleSidemenu()"></a>
+      <a class="navbar-brand"><img src="assets/images/11xplay/logo.png" alt=""></a>
+
+     <ul class="d-flex align-items-center btn-wrap mb-0 gap-3">
+
+      <li class="nav-item balance_li" *ngIf="(loggedIn$ | async)">
+        <a  class="nav-link"><i class="bi bi-bank"></i> Balance <b>0</b></a>
+    </li>
+    <li class="nav-item expo_li" *ngIf="(loggedIn$ | async)">
+        <a   class="nav-link"><i class="bi bi-bar-chart"></i> expo. <b>0</b></a>
+    </li>
+
+    </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="marque-wrapper">
+  <img src="assets/images/commentary.png" alt="">
+  <marquee behavior="" direction="">New Version Available With International Casino Please Contact Your Upline</marquee>
+</div>

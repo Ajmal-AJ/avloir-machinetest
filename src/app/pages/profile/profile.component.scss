@@ -1,0 +1,80 @@
+section.section.listing_page {
+  overflow-x: hidden;
+  padding: 0px;
+  background-color: #fff !important;
+}
+.card {
+  /* margin-bottom: 30px; */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+.userscreen-title {
+  margin-bottom: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  background: var(--theme-primary-color);
+  padding: 10px;
+  color: #fff;
+}
+.profile ul {
+  padding: 0;
+  list-style-type: style none;
+  margin: 0px;
+  li {
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+p {
+  text-transform: capitalize;
+  font-size: 14px;
+  margin: 0;
+  display: flex;
+  align-content: center;
+
+  svg {
+    margin-right: 5px;
+    background: #167abf;
+    border-radius: 10px;
+    padding: 3px;
+  }
+
+}
+
+}
+.userscreen-title {
+    margin-bottom: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    background: var(--theme-primary-color);
+    padding: 10px;
+    color: #fff;
+}
+.changePass {
+  padding: 20px;
+}
+.changePass .form-group {
+  margin-bottom: 15px;
+}
+.changePass label {
+  text-transform: capitalize;
+  font-size: 13px;
+}
+.changePass input {
+  border-color: #eee;
+  border-radius: 3px;
+}
+.small, small {
+  font-size: .75em;
+}
+.changePass .cp-pass-btn {
+  background: #00b11e;
+  font-weight: 900;
+  font-size: 15px;
+  height: auto;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 8px;
+}

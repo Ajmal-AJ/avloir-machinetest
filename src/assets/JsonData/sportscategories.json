@@ -1,0 +1,104 @@
+{
+  "categories": [
+    {
+      "title": "Cricket",
+      "id": "cricket",
+      "icon": "assets/images/menu-4.png"
+    },
+    {
+      "title": "Football",
+      "id": "football",
+      "icon": "assets/images/menu-1.png"
+    },
+    {
+      "title": "Tennis",
+      "id": "tennis",
+      "icon": "assets/images/menu-2.png"
+    },
+    {
+      "title": "Casino",
+      "id": "casino",
+      "icon": "assets/images/menu-99999.png"
+    },
+    {
+      "title": " Int Casino",
+      "id": "intcasino",
+      "icon": "assets/images/menu-99998.png"
+    },
+    {
+      "title": "Sports Book",
+      "id": "sportsbook",
+      "icon": "assets/images/sportsbook.png"
+    },
+    {
+      "title": "Horse Racing",
+      "id": "horseracing",
+      "icon": "assets/images/horse.png"
+    },
+    {
+      "title": " Greyhound Racing ",
+      "id": " greyhoundracing ",
+      "icon": "assets/images/greyhound.png"
+    },
+    {
+      "title": "Binary",
+      "id": "binary",
+      "icon": "assets/images/binery.png"
+    },
+    {
+      "title": "Kabadi",
+      "id": "kabadi",
+      "icon": "assets/images/kabaddi.png"
+    },
+    {
+      "title": "Politics",
+      "id": "politics",
+      "icon": "assets/images/politics.png"
+    },
+    {
+      "title": "Basketball",
+      "id": "basketball",
+      "icon": "assets/images/basketball.png"
+    },
+    {
+      "title": "Baseball",
+      "id": "baseball",
+      "icon": "assets/images/baseball.png"
+    },
+    {
+      "title": "Table Tennis",
+      "id": "tabletennis",
+      "icon": "assets/images/table-tennis.png"
+    },
+    {
+      "title": "VolleyBall",
+      "id": "volleyball",
+      "icon": "assets/images/vollyball.png"
+    },
+    {
+      "title": "Ice Hockey",
+      "id": "icehockey",
+      "icon": "assets/images/icehockey.png"
+    },
+    {
+      "title": "Rugby",
+      "id": "rugby",
+      "icon": "assets/images/rugby.png"
+    },
+    {
+      "title": "Mixed Martial Arts",
+      "id": "mixedmartialarts",
+      "icon": "assets/images/mixedmartial.png"
+    },
+    {
+      "title": "Darts",
+      "id": "darts",
+      "icon": "assets/images/darts.png"
+    },
+    {
+      "title": "Fustal",
+      "id": "fustal",
+      "icon": "assets/images/fustal.png"
+    }
+  ]
+}
